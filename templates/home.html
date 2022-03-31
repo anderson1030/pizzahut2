@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="jumbotron text-center">
+	<h1>Welcome to Funtoys</h1>
+	<p class="lead">Enjoy to buy your favourite toy here</p>
+</div>
+<div class="row justify-content-center">
+<div id="demo" class="carousel slide col-6" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/images/ironman_mark85.jpg" alt="ironman_mark85" class="img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/ironman_mark50.jpg" alt="ironman_mark50"class="img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/MB_Exia.jpg" alt="MB_Exia"class="img-fluid">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+
+{% endblock %}

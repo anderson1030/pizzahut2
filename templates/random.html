@@ -1,0 +1,18 @@
+<ul class="Product" id="links" >
+    {% for order in order %}
+    <div class="card" style="width: 30.33%">
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Order ID: {{order.id}}</h5>
+            <p class="card-text">FoodpandaID: {{order.foodpandaID}}</p>
+            <p class="card-text">Food: {{order.food}}</p>
+            <p class="card-text">Customer Name: {{order.customer}}</p>
+            <p class="card-text">Address: {{order.address}}</p>
+            <p class="card-text">Status: {{order.status}}</p>
+            {% if order.status == 'Preparing' %}
+            <a href="/send/{{order.id}}" style="margin: 0 auto;width: fit-content;%;" class="btn btn-primary">Compelete</a>
+            {%endif%}
+        </div>
+    </div>
+
+    {% endfor %}
+</ul>
